@@ -16,7 +16,6 @@ import org.hibernate.annotations.UpdateTimestamp;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 
-@SuppressWarnings("unused")
 @Entity//Transforma o objeto postagem em uma tabela no banco de dados
 
 @Table(name = "tb_postagem") //Renomeia a tabela no banco de dados
