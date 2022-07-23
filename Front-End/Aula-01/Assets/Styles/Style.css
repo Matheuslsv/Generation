@@ -1,0 +1,165 @@
+/*Styles da pagina index.html*/
+
+p {
+    font-size: 20px;
+}
+
+h1 {
+    font-style: italic;
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+#p-first {
+    font: size 24px;
+    font-weight: bold;
+}
+
+.p-color {
+    color: aqua;
+}
+
+.p-color2 {
+    color: brown;
+}
+
+body {
+    background-color: dimgray;
+}
+
+.h-cabecalhos {
+    color: rgb(255, 0, 0);
+    font-style: italic;
+    font-size: 30px;
+}
+
+img {
+    width: 600px;
+}
+
+.center {
+    text-align: center;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.fsize-30 {
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    /*Alinha Horizontalmente*/
+    align-items: center;
+    /*Alinha Verticalmente*/
+
+    /* border: 3px solid purple; /*Grossura da borda*/
+    padding: 10px;
+    /*Espaço entre os elementos e a linha da borda*/
+    margin: 20px;
+    /*Espaço entre a borda e os elementos em volta*/
+}
+
+#menu li {
+    display: inline;
+    padding: 30px;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+#menu li a:hover {
+    color: grey;
+}
+
+.p-30 {
+    padding: 30px;
+}
+
+.br-50 {
+    border-radius: 50%;
+}
+
+.wh-500 {
+    width: 500px;
+    height: 500px;
+}
+
+.tm-social {
+    width: 50px;
+    height: 50px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mgL-50 {
+    margin-left: 50px;
+}
+
+
+/*Styles do botão*/
+button {
+    font-family: inherit;
+    font-size: 20px;
+    background: royalblue;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+   }
+   
+   button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+   }
+   
+   button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+   }
+   
+   button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+   }
+   
+   button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+   }
+   
+   button:hover span {
+    transform: translateX(5em);
+   }
+   
+   button:active {
+    transform: scale(0.95);
+   }
+   
+   @keyframes fly-1 {
+    from {
+     transform: translateY(0.1em);
+    }
+   
+    to {
+     transform: translateY(-0.1em);
+    }
+   }
+   
+   
